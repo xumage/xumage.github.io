@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Три Вкуса</title>
+	<title>Три Вкуса - Меню</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -54,17 +54,17 @@
 
 			<div class="container header-bottom__container">
 				<ul class="header-bottom__nav">
-					<li class="header-bottom__item">
+					<li class="header-bottom__item_active">
 						<a href="#">Меню</a>
 					</li>
 					<li class="header-bottom__item">
-						<a href="#">Акции</a>
+						<a href="/sale.html">Акции</a>
 					</li>
 					<li class="header-bottom__item">
-						<a href="#">Контакты</a>
+						<a href="/contacts.html">Контакты</a>
 					</li>
 					<li class="header-bottom__item">
-						<a href="#">Доставка</a>
+						<a href="/delivery.html">Доставка</a>
 					</li>
 				</ul>
 				<div class="cart header-bottom-cart">
@@ -84,6 +84,8 @@
 <!-- MAIN -->
 
 	<!-- SLIDER -->
+
+	<main class="main">
 		<div class="container swiper__container">
 			<div class="swiper slideshow">
 				<div class="swiper-wrapper">
@@ -104,11 +106,7 @@
 
 	<!-- SIDEBAR -->
 
-		<div class="sidebar">
-			<div class="container sidebar__container">
 
-			</div>
-		</div>
 
 	<!-- SIDEBAR -->
 
@@ -120,6 +118,18 @@
 					<img src="img/test.svg" alt="Бургер 1">
 					<div class="menu__item-title">Бургер Мясной дар</div>
 					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
+					<div class="menu__item_footer">
+						<div class="menu__item-weight">
+							Вес: 280гр
+						</div>
+						<div class="menu__item-price">
+							280руб
+						</div>
+						<div class="menu__item-cart">
+							<a href="#"><img src="/img/v korzinu.svg" alt="В корзину">
+							в корзину</a>
+						</div>
+					</div>
 				</div>
 				<div class="menu__item">
 					<img src="img/test.svg" alt="Бургер 2">
@@ -163,6 +173,7 @@
 				</div>
 			</div>
 		</div>
+	</main>
 
 	<!-- MENU -->
 
@@ -182,7 +193,7 @@
 
 			<div class="footer-bottom__container">
 				<ul class="footer__list">
-					<li class="footer__list_link"><a href="#">О нас</a></li>
+					<li class="footer__list_link"><a href="/about.html">О нас</a></li>
 					<li class="footer__list_link"><a href="#">Публичная оферта</a></li>
 					<li class="footer__list_link"><a href="#">Политика конфиденциальности</a></li>
 					<li class="footer__list_link"><a target="_blank" href="https://vk.com"><img class="footer__list_link-img" src="/img/vk-button.png" alt="ВКонтакте"></a></li>

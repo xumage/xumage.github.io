@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper', {
 	autoplay: {
-		delay: 2000,
+		delay: 4000,
 	 },
 	navigation: {
 		nextEl: '.swiper-button-next',
