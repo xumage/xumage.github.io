@@ -1,243 +1,295 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Три Вкуса - Меню</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/adaptive.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Три Вкуса - Меню</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/adaptive.css" />
 </head>
+
 <body>
+  <div class="wrapper">
+    <!-- HEADER -->
 
-	<div class="wrapper">
-
-			<!-- HEADER -->
-
-		<header class="header">
-
-			<div class="header-top">
-				<div class="container header-top__container">
-					<div class="logo header__logo">
-						<div class="header__logo_img">
-							<a href="index.html">
-								<img src="img/logotip.svg" alt="Логотип" class="header__logo_img-link">
-							</a>
-						</div>
-					</div>
-					<div class="container header__nav_container">
-						<ul class="header-top__nav">
-							<li class="header-top__nav_item">
-								<img src="img/clock.svg" alt="Круглосуточно" class="header__nav_item-img">
-								Круглосуточно
-							</li>
-							<li class="header-top__nav_item">
-								<img src="img/geo.svg" alt="Ул. Губкина 13, Салават" class="header__nav_item-img">
-								Ул. Губкина 13, Салават
-							</li>
-							<li class="header-top__nav_item">
-								<img src="img/telephone.svg" alt="+7 (917) 777-77-77" class="header__nav_item-img">
-								+7 (917) 777-77-77
-							</li>
-						</ul>
-					</div>
-					<div class="login">
-						<a class="login-link" href="#">
-							<img class="login_link" src="img/Orion_login.svg" alt="Вход">
-							Вход
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="container header-bottom__container">
-				<ul class="header-bottom__nav">
-					<li class="header-bottom__item_active">
-						<a href="#">Меню</a>
-					</li>
-					<li class="header-bottom__item">
-						<a href="/sale.html">Акции</a>
-					</li>
-					<li class="header-bottom__item">
-						<a href="/contacts.html">Контакты</a>
-					</li>
-					<li class="header-bottom__item">
-						<a href="/delivery.html">Доставка</a>
-					</li>
-				</ul>
-				<div class="cart header-bottom-cart">
-					<a class="header-bottom-cart-link" href="#">
-						<img src="img/cart.png" alt="" class="header-bottom_cart-img">
-						1000р
-					</a>
-				</div>
-			</div>
-
-		</header>
-
-<!-- HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container header-top__container">
+          <div class="logo header__logo">
+            <div class="header__logo_img">
+              <a href="index.html">
+                <img src="img/logotip.svg" alt="Логотип" class="header__logo_img-link" />
+              </a>
+            </div>
+          </div>
+          <div class="container header__nav_container">
+            <ul class="header-top__nav">
+              <li class="header-top__nav_item">
+                <img src="img/clock.svg" alt="Круглосуточно" class="header__nav_item-img" />
+                Круглосуточно
+              </li>
+              <li class="header-top__nav_item">
+                <img src="img/geo.svg" alt="Ул. Губкина 13, Салават" class="header__nav_item-img" />
+                Ул. Губкина 13, Салават
+              </li>
+              <li class="header-top__nav_item">
+                <img src="img/telephone.svg" alt="+7 (917) 777-77-77" class="header__nav_item-img" />
+                +7 (917) 777-77-77
+              </li>
+            </ul>
+          </div>
+          <div class="login">
+            <a class="login-link" href="#">
 
 
+              <svg class="login-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="48" height="48">
+                <title>Login</title>
+                <desc>A line styled icon from Orion Icon Library.</desc>
+                <path data-name="layer2" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2"
+                  d="M36 24l9 8-9 8m-26-8h35" stroke-linejoin="round" stroke-linecap="round"></path>
+                <path data-name="layer1" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2"
+                  d="M54 12v40" stroke-linejoin="round" stroke-linecap="round"></path>
+              </svg>
 
-<!-- MAIN -->
+              Вход
+            </a>
+          </div>
+        </div>
+      </div>
 
-	<!-- SLIDER -->
+      <div class="container header-bottom__container">
+        <ul class="header-bottom__nav">
+          <li class="header-bottom__item_active">
+            <a href="#">Меню</a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="/sale.html">Акции</a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="/contacts.html">Контакты</a>
+          </li>
+          <li class="header-bottom__item">
+            <a href="/delivery.html">Доставка</a>
+          </li>
+        </ul>
+        <div class="cart header-bottom-cart">
+          <a class="header-bottom-cart-link" href="#">
+            <img src="img/cart.png" alt="" class="header-bottom_cart-img" />
+            1000р
+          </a>
+        </div>
+      </div>
+    </header>
 
-	<main class="main">
-		<div class="container swiper__container">
-			<div class="swiper slideshow">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img class="swiper-slide-img" src="img/slide1.jpg" alt="Акция 1"></div>
-					<div class="swiper-slide"><img class="swiper-slide-img" src="img/slide2.jpg" alt="Акция 2"></div>
-					<div class="swiper-slide"><img class="swiper-slide-img" src="img/slide3.jpg" alt="Акция 3"></div>
-					<div class="swiper-slide"><img class="swiper-slide-img" src="img/slide4.jpg" alt="Акция 4"></div>
-					<div class="swiper-slide"><img class="swiper-slide-img" src="img/slide5.jpg" alt="Акция 5"></div>
+    <!-- HEADER -->
 
-				</div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
-		</div>
+    <!-- MAIN -->
 
-	<!-- SLIDER -->
+    <!-- SLIDER -->
 
+    <main class="main">
+      <div class="container swiper__container">
+        <div class="swiper slideshow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="swiper-slide-img" src="img/slide1.jpg" alt="Акция 1" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide-img" src="img/slide2.jpg" alt="Акция 2" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide-img" src="img/slide3.jpg" alt="Акция 3" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide-img" src="img/slide4.jpg" alt="Акция 4" />
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide-img" src="img/slide5.jpg" alt="Акция 5" />
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
 
+      <!-- SLIDER -->
 
+      <!-- SIDEBAR -->
 
+      <!-- SIDEBAR -->
 
+      <!-- MENU -->
 
-	<!-- SIDEBAR -->
+      <div class="menu">
 
+        <div class="container menu__container">
+          <div class="sidebar">
 
+            <ul class="sidebar-list">
+              <li class="sidebar-item">
+                <a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/burger-ico.svg"
+                    alt="Бургеры" />
+                  Бургеры</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/hotdog-ico.svg"
+                    alt="Хот-доги" />
+                  Хот-доги</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/pizza-ico.svg"
+                    alt="Пицца" />
+                  Пицца</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/shawerma-ico.svg"
+                    alt="Шаурма" />Шаурма</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/drink-ico.svg"
+                    alt="Напитки" />Напитки</a>
+              </li>
+            </ul>
 
+          </div>
+          <div class="menu__list">
 
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 1" />
+              <div class="menu__item-title">Бургер Мясной дар</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+              <div class="menu__item_footer">
+                <div class="menu__item-weight">Вес: 280гр</div>
+                <div class="menu__item-price">280руб</div>
+                <div class="menu__item-cart">
+                  <a href="#"><img src="/img/v korzinu.svg" alt="В корзину" />
+                    в корзину</a>
+                </div>
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 2" />
+              <div class="menu__item-title">Бургер Греческий</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 3" />
+              <div class="menu__item-title">PEPPER KAIF</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 4" />
+              <div class="menu__item-title">PEPPER IXI</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 5" />
+              <div class="menu__item-title">Гамбургер</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 6" />
+              <div class="menu__item-title">СТЕЙКБУГЕР</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 7" />
+              <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 8" />
+              <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
+              <div class="menu__item-subtitle">
+                Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+            <div class="menu__item">
+              <img src="img/test.svg" alt="Бургер 9" />
+              <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
+              <div class="menu__item-subtitle">
+                Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
+                говядины, сыр Гауда, томаты, лук жареный, соус мясной
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
+    <!-- MENU -->
 
+    <!-- MAIN -->
 
+    <!-- FOOTER -->
 
+    <footer class="footer">
+      <div class="container footer-top__container">
+        <ul class="footer__info">
+          <li class="footer__info_item">
+            <img class="footer__info_item-img" src="/img/clock.svg" alt="" />
+            Круглосуточно
+          </li>
+          <li class="footer__info_item">
+            <img class="footer__info_item-img" src="/img/geo.svg" alt="" />
+            Ул. Губкина 13, Салават
+          </li>
+          <li class="footer__info_item">
+            <a href="tel:+79178004477"><img class="footer__info_item-img" src="/img/telephone.svg" alt="" />
+              +7 (917) 800-44-77</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="container footer-bottom__container">
+        <ul class="footer__list">
+          <li class="footer__list_link"><a href="/about.html">О нас</a></li>
+          <li class="footer__list_link"><a href="#">Публичная оферта</a></li>
+          <li class="footer__list_link">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="footer__list_link">
+            <a target="_blank" href="https://vk.com"><img class="footer__list_link-img" src="/img/vk-button.png"
+                alt="ВКонтакте" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
+    <!-- FOOTER -->
+  </div>
 
-
-
-
-	<!-- SIDEBAR -->
-
-	<!-- MENU -->
-
-		<div class="menu">
-
-
-			<div class="sidebar">
-				<div class="container sidebar__container">
-					<ul class="sidebar-list">
-						<li class="sidebar-item"><a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/burger-ico.svg" alt="Бургеры"> Бургеры</a></li>
-						<li class="sidebar-item"><a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/hotdog-ico.svg" alt="Хот-доги"> Хот-доги</a></li>
-						<li class="sidebar-item"><a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/pizza-ico.svg" alt="Пицца"> Пицца</a></li>
-						<li class="sidebar-item"><a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/shawerma-ico.svg" alt="Шаурма">Шаурма</a></li>
-						<li class="sidebar-item"><a class="sidebar-item-link" href=""><img class="sidebar-item-img" src="/img/drink-ico.svg" alt="Напитки">Напитки</a></li>
-					</ul>
-				</div>
-			</div>
-
-
-			<div class="container menu__container">
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 1">
-					<div class="menu__item-title">Бургер Мясной дар</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-					<div class="menu__item_footer">
-						<div class="menu__item-weight">
-							Вес: 280гр
-						</div>
-						<div class="menu__item-price">
-							280руб
-						</div>
-						<div class="menu__item-cart">
-							<a href="#"><img src="/img/v korzinu.svg" alt="В корзину">
-							в корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 2">
-					<div class="menu__item-title">Бургер Греческий</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 3">
-					<div class="menu__item-title">PEPPER KAIF</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 4">
-					<div class="menu__item-title">PEPPER IXI</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 5">
-					<div class="menu__item-title">Гамбургер</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 6">
-					<div class="menu__item-title">СТЕЙКБУГЕР</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 7">
-					<div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 8">
-					<div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-					<div class="menu__item-subtitle">Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-				<div class="menu__item">
-					<img src="img/test.svg" alt="Бургер 9">
-					<div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-					<div class="menu__item-subtitle">Булка белая, айсберг, жареные шампиньоны, котлета из мраморной говядины, сыр Гауда, томаты, лук жареный, соус мясной</div>
-				</div>
-			</div>
-		</div>
-	</main>
-
-	<!-- MENU -->
-
-<!-- MAIN -->
-
-
-		<!-- FOOTER -->
-
-		<footer class="footer">
-			<div class="container footer-top__container">
-				<ul class="footer__info">
-					<li class="footer__info_item"><img class="footer__info_item-img" src="/img/clock.svg" alt=""> Круглосуточно</li>
-					<li class="footer__info_item"><img class="footer__info_item-img" src="/img/geo.svg" alt=""> Ул. Губкина 13, Салават</li>
-					<li class="footer__info_item"><a href="tel:+79178004477"><img class="footer__info_item-img" src="/img/telephone.svg" alt=""> +7 (917) 800-44-77</a></li>
-				</ul>
-			</div>
-
-			<div class="container footer-bottom__container">
-				<ul class="footer__list">
-					<li class="footer__list_link"><a href="/about.html">О нас</a></li>
-					<li class="footer__list_link"><a href="#">Публичная оферта</a></li>
-					<li class="footer__list_link"><a href="#">Политика конфиденциальности</a></li>
-					<li class="footer__list_link"><a target="_blank" href="https://vk.com"><img class="footer__list_link-img" src="/img/vk-button.png" alt="ВКонтакте"></a></li>
-				</ul>
-			</div>
-		</footer>
-
-		<!-- FOOTER -->
-
-	</div>
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src="js/script.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
