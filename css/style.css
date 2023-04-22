@@ -25,9 +25,9 @@ body{
 }
 
 .wrapper{
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 /* HEADER TOP */
@@ -145,6 +145,36 @@ body{
 
 /*  */
 
+/* SIDEBAR */
+
+.sidebar{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sidebar-item{
+	display: flex;
+	border-top: 1px solid #fff;
+	align-items: center;
+}
+
+.sidebar-item:last-child{
+	border-bottom: 1px solid #fff;
+}
+
+.sidebar-item-link{
+	display: flex;
+	align-items: center;
+}
+
+.sidebar-item-img{
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+/* SIDEBAR */
+
 
 
 /*  */
@@ -155,6 +185,7 @@ body{
 	grid-template-columns:repeat(auto-fill, minmax(372px, 1fr));
 	text-align: center;
 	margin: 0 auto;
+	position: relative;
 }
 
 .menu__item{
@@ -291,7 +322,7 @@ body{
 }
 
 .sale__container{
-	max-width: 1680px;
+	max-width: 1600px;
 	display: grid;
 	grid-template-columns:repeat(auto-fill, minmax(426px, 1fr));
 	gap: 40px 0;
@@ -306,7 +337,7 @@ body{
 
 .sale__item-title{
 	font-size: 20px;
-	max-width: 365px;
+	max-width: 400px;
 	margin: 0 auto;
 	margin-top: 10px;
 }
@@ -318,7 +349,9 @@ body{
 	margin-top: 10px;
 }
 
-
+.sale__item-img{
+	border-radius: 20px;
+}
 
 /* SALE */
 
@@ -402,6 +435,7 @@ body{
 .delivery-info{
 	margin: 0 auto;
 	max-width: 100%;
+	margin-top: 80px;
 }
 
 .delivery-info__container{
@@ -413,29 +447,52 @@ body{
 .delivery-conditions{
 	margin: 0 auto;
 	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .delivery-conditions-text{
 	margin: 0 auto;
 	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .delivery-conditions-text p{
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .pay-methods{
 	margin: 0 auto;
 	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.pay-methods-cash-text, .pay-methods-card-text{
+	margin: 0 auto;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 .pay-methods-cash-text{
+	margin-bottom: 20px;
+}
+
+.pay-methods-cash-text p{
 	margin: 0 auto;
 }
 
-.pay-methods-card-text{
+.pay-methods-card-text p{
 	margin: 0 auto;
 }
+
 
 
 /* /ДОСТАВКА */
