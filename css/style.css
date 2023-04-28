@@ -158,6 +158,7 @@ body {
 
 .sidebar {
   width: 100%;
+  position: sticky;
 }
 
 .sidebar-item {
@@ -196,13 +197,19 @@ body {
   padding: 0;
 }
 
+.test {
+}
+
+.menu-title {
+  width: 80%;
+}
+
 .menu__list {
   max-width: 1490px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(372px, 1fr));
   text-align: center;
   position: relative;
-  width: 80%;
 }
 
 .menu__item {
