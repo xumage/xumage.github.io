@@ -2,18 +2,20 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Контакты</title>
+	<title>Три Вкуса - Меню</title>
 	<link rel="icon" href="/img/logotip.svg" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/adaptive.css" />
 </head>
 
 <body>
 	<div class="wrapper">
+
+
 
 		<header class="header">
 			<div class="header-top">
@@ -43,20 +45,7 @@
 
 					<div class="login">
 						<a class="login-link" href="#">
-
-
-							<svg class="login-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
-								aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink"
-								width="48" height="48">
-								<title>Login</title>
-								<desc>A line styled icon from Orion Icon Library.</desc>
-								<path data-name="layer2" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2"
-									d="M36 24l9 8-9 8m-26-8h35" stroke-linejoin="round" stroke-linecap="round"></path>
-								<path data-name="layer1" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2"
-									d="M54 12v40" stroke-linejoin="round" stroke-linecap="round"></path>
-							</svg>
-
-							<a class="login-btn" href="login.html">Вход</a>
+							Выйти
 						</a>
 					</div>
 				</div>
@@ -67,13 +56,13 @@
 					<li class="header-bottom__item">
 						<a href="index.html">Меню</a>
 					</li>
-					<li class="header-bottom__item">
+					<li class="header-bottom__item active">
 						<a href="/sale.html">Акции</a>
 					</li>
 					<li class="header-bottom__item">
 						<a href="/contacts.html">Контакты</a>
 					</li>
-					<li class="header-bottom__item active">
+					<li class="header-bottom__item">
 						<a href="/delivery.html">Доставка</a>
 					</li>
 				</ul>
@@ -89,50 +78,44 @@
 
 		<main class="main">
 
+			<div class="container login__container">
+				<div class="title">
+					Личный кабинет
+				</div>
 
-			<div class="delivery-info">
-				<div class="container delivery-info__container">
+				<div class="enter">
 
-					<div class="delivery-conditions">
-						Условия доставки
+					<div class="inpt">
+						<div class="input-text">
+							Имя
+						</div>
+						<div class="data-input">
+							<input type="text">
+						</div>
 					</div>
-
-					<div class="delivery-conditions-text">
-						<p>С 11:00 до 23:00 ежедневно</p>
-						<p>По городу - 80 руб, от 610 руб - бесплатно</p>
-						<p>По пром.зоне - 120 руб, от 810 руб - бесплатно</p>
+					<div class="inpt">
+						<div class="input-text">
+							Email
+						</div>
+						<div class="data-input">
+							<input type="text">
+						</div>
 					</div>
-
-
-
-					<div class="pay-methods">
-						Способы оплаты
-					</div>
-
-					<div class="pay-methods-cash-text">
-						<p>Наличный расчёт</p>
-						<p>Если товар доставляется курьером, то оплата осуществляется наличными курьеру в руки. Наличная оплата
-							также
-							возможна при самовывозе.</p>
-					</div>
-
-					<div class="pay-methods-card-text">
-						<p>Банковской картой</p>
-						<p>Для выбора оплаты с помощью банковской карты в корзине необходимо выбрать “Оплату заказа банковской
-							картой”.
-							Оплата происходит через ПАО СБЕРБАНК с использованием банковских карт следующих платёжных систем: МИР VISA
-							International Mastercard Worldwide JCB</p>
+					<div class="inpt">
+						<div class="input-text">
+							Телефон
+						</div>
+						<div class="data-input">
+							<input type="text">
+						</div>
 					</div>
 
 
 				</div>
 
-
 			</div>
-
-
-
 		</main>
+
 
 
 		<footer class="footer">
@@ -168,11 +151,7 @@
 			</div>
 		</footer>
 
-
-
 	</div>
-	</div>
-
 </body>
 
 </html>

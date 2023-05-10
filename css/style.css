@@ -74,6 +74,8 @@ body {
 
 .login {
   font-size: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .login-link {
@@ -551,3 +553,34 @@ body {
 }
 
 /* /ДОСТАВКА */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin: 50px 0 50px;
+}
+
+.enter {
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+.inpt {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.inpt:last-child {
+  margin-bottom: 0;
+}
+
+.data-input input {
+  border-radius: 5px;
+  padding: 4px;
+  width: 300px;
+}
