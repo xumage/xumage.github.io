@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   .sidebar-item {
     font-size: 18px;
   }
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width:1140px) {
+@media (max-width: 1140px) {
   .header__container {
     position: relative;
   }
@@ -179,10 +179,10 @@
   }
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
   .header__logo_img-link {
     max-width: 80px;
-}
+  }
   .menu-info__categories_item {
     font-size: 16px;
     line-height: 20px;
@@ -216,7 +216,7 @@
   }
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .menu-info__categories_item {
     font-size: 12px;
     line-height: 18px;
@@ -233,6 +233,21 @@
   }
   .slider--control-btn::after {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 408px) {
+  .inpt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-text {
+    margin-bottom: 10px;
+  }
+
+  .data-input input {
+    width: 100%;
   }
 }
 
