@@ -694,3 +694,8 @@ html {
   color: #fff;
   border-radius: 5px;
 }
+
+.data-input {
+  display: flex;
+  align-items: center;
+}
