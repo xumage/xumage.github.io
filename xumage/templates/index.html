@@ -1,4 +1,5 @@
 {% load static %}
+{% csrf_token %}
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -175,705 +176,137 @@
               Бургеры
             </div>
             <div class="menu__list">
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 1" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Мясной дар</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 2" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Греческий</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 3" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER KAIF</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 4" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER IXI</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 5" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Гамбургер</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 6" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">СТЕЙКБУГЕР</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 7" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 8" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 9" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
 
-
+              {% for burger in burgers %}
+                <div class="menu__item">
+                  <img class="menu__item-img" src={% static burger.img_path %} alt="Бургер 1" />
+                  <div class="menu__item_content"> 
+                    <div class="menu__item-title">{{ burger.name }}</div>
+                    <div class="menu__item-subtitle">
+                      {{ burger.desc }}
+                    </div>
+                    <div class="menu__item_footer">
+                      <div class="menu__item-weight">Вес: {{ burger.weight }} гр</div>
+                      <div class="menu__item-price">{{burger.price}} руб</div>
+                      <button type="button" class="menu__item-cart">
+                        <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
+                        в корзину
+                        </и>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
             </div>
-
           </div>
+
           <div class="menu-wrapper" id="hot-dogs">
             <div class="menu-title">
               Хот-доги
             </div>
-            <div class="menu__list">
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 1" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Мясной дар</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 2" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Греческий</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
+            
+            {% for hot_dog in hotdogs %}
+            
+              <div class="menu__list">
+                <div class="menu__item">
+                  <img class="menu__item-img" src={% static hot_dog.img_path %} alt="Бургер 1" />
+                  <div class="menu__item_content">
+                    <div class="menu__item-title">{{ hot_dog.name }}</div>
+                    <div class="menu__item-subtitle">
+                      {{ hot_dog.desc  }}
+                    </div>
+                    <div class="menu__item_footer">
+                      <div class="menu__item-weight">Вес: {{ hot_dog.weight }} гр</div>
+                      <div class="menu__item-price">{{ hot_dog.price }} руб</div>
+                      <button type="button" class="menu__item-cart">
+                        <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
+                        в корзину
+                        </и>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 3" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER KAIF</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 4" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER IXI</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 5" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Гамбургер</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 6" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">СТЕЙКБУГЕР</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 7" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 8" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 9" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
 
-
+            {% endfor %}
             </div>
-
           </div>
+
+
           <div class="menu-wrapper" id="pizza">
             <div class="menu-title">
               Пицца
             </div>
-            <div class="menu__list">
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 1" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Мясной дар</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 2" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Греческий</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 3" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER KAIF</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 4" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER IXI</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 5" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Гамбургер</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 6" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">СТЕЙКБУГЕР</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 7" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 8" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 9" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
 
+            {% for pizza in pizzas %}
 
+              <div class="menu__list">
+                <div class="menu__item">
+                  <img class="menu__item-img" src={% static pizza.img_path %} alt="Бургер 1" />
+                  <div class="menu__item_content">
+                    <div class="menu__item-title">{{ pizza.name }}</div>
+                    <div class="menu__item-subtitle">
+                      {{ pizza.desc }}
+                    </div>
+                    <div class="menu__item_footer">
+                      <div class="menu__item-weight">Вес: {{ pizza.weight }} гр</div>
+                      <div class="menu__item-price">{{ pizza.price }} руб</div>
+                      <button type="button" class="menu__item-cart">
+                        <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
+                        в корзину
+                        </и>
+                    </div>
+                  </div>
+                </div>
+                
+            {% endfor %}
             </div>
-
           </div>
+
           <div class="menu-wrapper" id="shawarma">
             <div class="menu-title">
               Шаурма
             </div>
-            <div class="menu__list">
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 1" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Мясной дар</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 2" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Греческий</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
+            {% for shaurma in shaurmas %}
+              <div class="menu__list">
+                <div class="menu__item">
+                  <img class="menu__item-img" src={% static shaurma.img_path %} alt="Бургер 1" />
+                  <div class="menu__item_content">
+                    <div class="menu__item-title"> {{ shaurma.name }} </div>
+                    <div class="menu__item-subtitle">
+                      {{ shaurma.desc }}
+                    </div>
+                    <div class="menu__item_footer">
+                      <div class="menu__item-weight">Вес: {{ shaurma.weight }} гр</div>
+                      <div class="menu__item-price">{{ shaurma.price }} руб</div>
+                      <button type="button" class="menu__item-cart">
+                        <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
+                        в корзину
+                        </и>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 3" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER KAIF</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 4" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER IXI</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 5" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Гамбургер</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 6" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">СТЕЙКБУГЕР</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 7" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 8" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 9" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
+
+            {% endfor %}
+
 
 
             </div>
-
           </div>
+
           <div class="menu-wrapper" id="drinks">
             <div class="menu-title">
               Напитки
             </div>
+            {% for drink in drinks  %}
             <div class="menu__list">
               <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 1" />
+                <img class="menu__item-img" src={% static drink.img_path %} alt="Бургер 1" />
                 <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Мясной дар</div>
+                  <div class="menu__item-title">{{ drink.name }}</div>
                   <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
+                    {{ drink.desc }}
                   </div>
                   <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
+                    <div class="menu__item-weight">Вес: {{ drink.weight }}гр</div>
+                    <div class="menu__item-price">{{ drink.price }}руб</div>
                     <button type="button" class="menu__item-cart">
                       <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
                       в корзину
@@ -881,150 +314,8 @@
                   </div>
                 </div>
               </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 2" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер Греческий</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 3" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER KAIF</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 4" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">PEPPER IXI</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 5" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Гамбургер</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 6" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">СТЕЙКБУГЕР</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 7" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ПИТБУРГЕР"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 8" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булочка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
-              <div class="menu__item">
-                <img class="menu__item-img" src="img/test.svg" alt="Бургер 9" />
-                <div class="menu__item_content">
-                  <div class="menu__item-title">Бургер "ТРИ ВКУСА"</div>
-                  <div class="menu__item-subtitle">
-                    Булка белая, айсберг, жареные шампиньоны, котлета из мраморной
-                    говядины, сыр Гауда, томаты, лук жареный, соус мясной
-                  </div>
-                  <div class="menu__item_footer">
-                    <div class="menu__item-weight">Вес: 280гр</div>
-                    <div class="menu__item-price">280руб</div>
-                    <button type="button" class="menu__item-cart">
-                      <img class="menu__item_cart-icon" src="/img/v korzinu.svg" alt="В корзину" />
-                      в корзину
-                      </и>
-                  </div>
-                </div>
-              </div>
+
+              {% endfor %}
 
 
             </div>
