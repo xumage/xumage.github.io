@@ -2,22 +2,20 @@
 <html lang="ru">
 
 <head>
-	<title>Акции</title>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
 	<link rel="icon" href="/img/logotip.svg" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/adaptive.css">
-	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width"> -->
 </head>
 
 <body>
 
 	<div class="wrapper">
-		<!-- HEADER -->
+
 		<header class="header">
 			<div class="container header__container">
 				<a href="index.html" class="logo header__logo">
@@ -27,7 +25,7 @@
 					<li class="header__nav_item">
 						<a href="index.html">Меню</a>
 					</li>
-					<li class="header__nav_item active">
+					<li class="header__nav_item">
 						<a href="sale.html">Акции</a>
 					</li>
 					<li class="header__nav_item">
@@ -47,7 +45,7 @@
 					<div class="burger__line"></div>
 				</button>
 				<div class="login">
-					<a class="login-link" href="reg.html">
+					<a class="login-link" href="login.html">
 						<svg class="login-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 							aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
 							<title>Login</title>
@@ -57,7 +55,7 @@
 							<path data-name="layer1" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2"
 								d="M54 12v40" stroke-linejoin="round" stroke-linecap="round"></path>
 						</svg>
-						Регистрация
+						Вход
 					</a>
 				</div>
 			</div>
@@ -100,58 +98,91 @@
 			</div>
 		</div>
 		<!-- mobile-menu -->
+
+
+
 		<main class="main">
 
+			<div class="container reg__container">
+				<div class="title">
+					Регистрация
+				</div>
 
-			<div class="sale">
-				<div class="container sale__container">
-					<div class="sale__item">
-						<img class="sale__item-img" src="img/test1.jpg" alt="Акция 2">
-						<div class="sale__item-title">Пицца со скидкой 30%</div>
-						<div class="sale__item-subtitle">
-							Акция действует при совершении заказа только с 12:00 до 16:00 с понедельника по четверг, на
-							предварительные заказы
-							позднее 16.00, акция не распространяется. - Скидка 30% на все пиццы - Сет Бизнес Ланч за 490 рублей,
-							скидка 509 руб.
-							Скидка не суммируется с другими скидками. Акция "Счастливые часы" не действует в предпраздничные,
-							праздничные и выходные
-							дни. Срок действия акции ограничен.</div>
-					</div>
-					<div class="sale__item">
-						<img class="sale__item-img" src="img/test1.jpg" alt="Акция 2">
-						<div class="sale__item-title">Наггетсы в подарок</div>
-						<div class="sale__item-subtitle">
-							Куриные наггетсы 10шт в подарок к заказу от 990р.
-							Промокод Kу
-							В сумме заказа участвуют пицца, роллы, воки, горячие закуски.
-							Акция не действует при оплате бонусами, сеты в сумме заказа для акции не участвуют.</div>
-					</div>
-					<div class="sale__item">
-						<img class="sale__item-img" src="img/test1.jpg" alt="Акция 3">
-						<div class="sale__item-title">Пицца в подарок на 1-й заказ</div>
-						<div class="sale__item-subtitle">
-							Пепперони 25см в подарок к 1-му заказу от 790р.
-							Промокод активации +Pizza
-							В сумме заказа для акции учитываются пицца, роллы, воки, горячие закуски
-							Акция не действует при оплате бонусами</div>
-					</div>
+				<div class="enter">
+
+					<form action="#">
+						<div class="inpt">
+							<div class="input-text">
+								Имя
+							</div>
+							<label class="data-input">
+								<input type="text">
+								<img class="data-edit-img" src="/img/data-edit.svg" alt="Изменить данные"></label>
+						</div>
+						<div class="inpt">
+							<div class="input-text">
+								Email
+							</div>
+							<label class="data-input">
+								<input type="email">
+								<img class="data-edit-img" src="/img/data-edit.svg" alt="Изменить данные"></label>
+						</div>
+						<div class="inpt">
+							<div class="input-text">
+								Телефон
+							</div>
+							<label class="data-input">
+								<input type="tel">
+								<img class="data-edit-img" src="/img/data-edit.svg" alt="Изменить данные">
+							</label>
+						</div>
+						<div class="inpt">
+							<div class="input-text">
+								Пароль
+							</div>
+							<label class="data-input">
+								<input type="password">
+								<img class="data-edit-img" src="/img/data-edit.svg" alt="Изменить данные">
+							</label>
+						</div>
+						<div class="inpt">
+							<div class="input-text">
+								Повторите пароль
+							</div>
+							<label class="data-input">
+								<input type="password">
+								<img class="data-edit-img" src="/img/data-edit.svg" alt="Изменить данные">
+							</label>
+						</div>
+
+						<button class="save-btn" type="submit">Зарегистрироваться</button>
+
+					</form>
+
 
 				</div>
+
 			</div>
-
-
 		</main>
+
+
 
 
 		<footer class="footer">
 			<div class="container footer-top__container">
 				<ul class="footer__info">
-					<li class="footer__info_item"><img class="footer__info_item-img" src="/img/clock.svg" alt=""> Круглосуточно
+					<li class="footer__info_item">
+						<img class="footer__info_item-img" src="/img/clock.svg" alt="" />
+						Круглосуточно
 					</li>
-					<li class="footer__info_item"><img class="footer__info_item-img" src="/img/geo.svg" alt=""> Б. Матросова 27,
-						Салават</li>
-					<li class="footer__info_item"><a href="tel:+79178004477"><img class="footer__info_item-img"
-								src="/img/telephone.svg" alt=""> +7 (917) 777-77-77</a></li>
+					<li class="footer__info_item">
+						<img class="footer__info_item-img" src="/img/geo.svg" alt="" />
+						Б. Матросова 27, Салават
+					</li>
+					<li class="footer__info_item">
+						<a href="tel:+79178004477"><img class="footer__info_item-img" src="/img/telephone.svg" alt="" />
+							+7 (917) 77-77-77</a>
+					</li>
 				</ul>
 			</div>
 
@@ -159,16 +190,16 @@
 				<ul class="footer__list">
 					<li class="footer__list_link"><a href="/about.html">О нас</a></li>
 					<li class="footer__list_link"><a href="#">Публичная оферта</a></li>
-					<li class="footer__list_link"><a href="#">Политика конфиденциальности</a></li>
-					<li class="footer__list_link"><a target="_blank" href="https://vk.com/trivkusaslv"><img
-								class="footer__list_link-img" src="/img/vk-button.png" alt="ВКонтакте"></a></li>
+					<li class="footer__list_link">
+						<a href="#">Политика конфиденциальности</a>
+					</li>
+					<li class="footer__list_link">
+						<a target="_blank" href="https://vk.com/trivkusaslv"><img class="footer__list_link-img"
+								src="/img/vk-button.png" alt="ВКонтакте" /></a>
+					</li>
 				</ul>
 			</div>
 		</footer>
-
-
-	</div>
-
 
 	</div>
 	<script src="js/script.js"></script>
