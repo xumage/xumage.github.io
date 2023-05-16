@@ -5,6 +5,7 @@ class Users(models.Model):
     full_name = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=20)
     password_hash = models.CharField(max_length=20)
+    email = models.CharField(max_length=40)
 
 
 class Orders(models.Model):

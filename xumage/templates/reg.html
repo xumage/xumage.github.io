@@ -21,21 +21,21 @@
 
 		<header class="header">
 			<div class="container header__container">
-				<a href="index.html" class="logo header__logo">
+				<a href="/" class="logo header__logo">
 					<img src="{% static 'img/logotip.svg' %}" alt="Логотип" class="header__logo_img-link" />
 				</a>
 				<ul class="header__nav">
 					<li class="header__nav_item">
-						<a href="index.html">Меню</a>
+						<a href="/">Меню</a>
 					</li>
 					<li class="header__nav_item">
-						<a href="sale.html">Акции</a>
+						<a href="/sales">Акции</a>
 					</li>
 					<li class="header__nav_item">
-						<a href="contacts.html">Контакты</a>
+						<a href="/contacts">Контакты</a>
 					</li>
 					<li class="header__nav_item">
-						<a href="delivery.html">Доставка</a>
+						<a href="/delivery">Доставка</a>
 					</li>
 					<li class="header__nav_item">
 						<a href="tel: +79177777777">
@@ -48,7 +48,7 @@
 					<div class="burger__line"></div>
 				</button>
 				<div class="login">
-					<a class="login-link" href="login.html">
+					<a class="login-link" href="/login">
 						<svg class="login-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
 							aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
 							<title>Login</title>
@@ -68,16 +68,16 @@
 			<nav class="mobile-menu__nav">
 				<ul class="mobile-menu__nav-list">
 					<li class="mobile-menu__nav-list_item">
-						<a href="index.html">Меню</a>
+						<a href="/">Меню</a>
 					</li>
 					<li class="mobile-menu__nav-list_item">
-						<a href="sale.html">Акции</a>
+						<a href="/sales">Акции</a>
 					</li>
 					<li class="mobile-menu__nav-list_item">
-						<a href="contacts.html">Контакты</a>
+						<a href="/contacts">Контакты</a>
 					</li>
 					<li class="mobile-menu__nav-list_item">
-						<a href="delivery.html">Доставка</a>
+						<a href="/delivery">Доставка</a>
 					</li>
 				</ul>
 			</nav>
@@ -113,13 +113,14 @@
 
 				<div class="enter">
 
-					<form action="#">
+					<form action="postuser/" method="POST">
+                        {% csrf_token %}
 						<div class="inpt">
 							<div class="input-text">
 								Имя
 							</div>
 							<label class="data-input">
-								<input type="text">
+								<input type="text" name="name">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные"></label>
 						</div>
 						<div class="inpt">
@@ -127,7 +128,7 @@
 								Email
 							</div>
 							<label class="data-input">
-								<input type="email">
+								<input type="email" name="email">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные"></label>
 						</div>
 						<div class="inpt">
@@ -135,7 +136,7 @@
 								Телефон
 							</div>
 							<label class="data-input">
-								<input type="tel">
+								<input type="tel" name="tel">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные">
 							</label>
 						</div>
@@ -144,7 +145,7 @@
 								Пароль
 							</div>
 							<label class="data-input">
-								<input type="password">
+								<input type="password" name="password">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные">
 							</label>
 						</div>
@@ -153,7 +154,7 @@
 								Повторите пароль
 							</div>
 							<label class="data-input">
-								<input type="password">
+								<input type="password" name="verify_password">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные">
 							</label>
 						</div>
