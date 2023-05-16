@@ -57,3 +57,6 @@ def profile(request):
 
 def sales(request):
     return render(request, 'sales.html')
+
+def register(request):
+    return render(request, 'reg.html')
