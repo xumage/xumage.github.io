@@ -48,6 +48,13 @@
         <button class="burger header__burger">
           <div class="burger__line"></div>
         </button>
+        {% if credentials.name %}
+        <div class="login">
+          <a class="login-link" href="/profile">
+            {{ credentials.name }}
+          </a>
+        </div>
+        {% else %}
         <div class="login">
           <a class="login-link" href="/login">
             <svg class="login-link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
@@ -62,6 +69,9 @@
             Вход
           </a>
         </div>
+            {% endif %}
+            
+            
       </div>
     </header>
     <div class="menu-info">
@@ -91,9 +101,9 @@
           </div>
           <div class="swiper-pagination menu-info__categories_pagination"></div>
         </div>
-        <a href="#" class="cart menu-info-cart">
+        <a href="create-order/" class="cart menu-info-cart">
           <img src="{% static 'img/cart.png' %}" alt="" class="menu-info_cart-img" />
-          1000р
+          {{ request.session.cart.total_price }} р
         </a>
       </div>
     </div>
@@ -188,10 +198,10 @@
                     <div class="menu__item_footer">
                       <div class="menu__item-weight">Вес: {{ burger.weight }} гр</div>
                       <div class="menu__item-price">{{burger.price}} руб</div>
-                      <button type="button" class="menu__item-cart">
-                        <img class="menu__item_cart-icon" src="{% static '/img/v_korzinu.svg' %}" alt="В корзину" />
-                        в корзину
-                        </и>
+                      <form action="add-to-cart/" method="post">
+                        {% csrf_token %}
+                        <button value="{{ burger.name }}" class="menu__item-cart" name="name">в корзину</button>
+                      </form>
                     </div>
                   </div>
                 </div>
