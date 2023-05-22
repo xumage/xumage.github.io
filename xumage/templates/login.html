@@ -113,13 +113,14 @@
 
 				<div class="enter">
 
-					<form action="#">
+					<form action="loginuser/" method="POST">
+						{% csrf_token %}
 						<div class="inpt">
 							<div class="input-text">
 								Имя
 							</div>
 							<label class="data-input">
-								<input type="text">
+								<input type="text" name="name">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные"></label>
 						</div>
 						<div class="inpt">
@@ -127,7 +128,7 @@
 								Email
 							</div>
 							<label class="data-input">
-								<input type="email">
+								<input type="email" name="email">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные"></label>
 						</div>
 						<div class="inpt">
@@ -135,7 +136,7 @@
 								Телефон
 							</div>
 							<label class="data-input">
-								<input type="tel">
+								<input type="tel" name="tel">
 								<img class="data-edit-img" src="{% static '/img/data-edit.svg' %}" alt="Изменить данные">
 							</label>
 						</div>

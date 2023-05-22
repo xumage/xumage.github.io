@@ -1,0 +1,25 @@
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create order</title>
+</head>
+<body>
+    {% for item in request.session.cart.items %}
+        <p> {{ item.name }} - {{ item.price }} </p>
+
+    {% endfor %}
+    <h3> Итого: {{ request.session.cart.total_price }} </h3>
+    <form action="send-notification/" method="post">
+    {% csrf_token %}
+        <input type="submit" value="Заказать" name="task">
+        <input type="submit" value="Отмена" name="task">
+    </form>
+    
+</body>
+</html>
